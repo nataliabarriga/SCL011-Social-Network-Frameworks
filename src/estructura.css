@@ -5,3 +5,412 @@ body{
     width: 100%;
 }
 
+
+@media (max-width:736px){
+    .root{
+        border: 1px solid black;
+        background-color: #f7f7f7;
+        padding: 5%;
+    }
+
+    /* Pantalla de inicio */
+    .container{
+        border: 1px solid red;
+        width: 100%;
+        height: 736px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnGradient{
+        width: 150px;
+        height: 30px;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        background-image: linear-gradient(to right bottom, #1b581e, #2a6d20, #3c8320, #519a1c, #68b013);
+    }
+
+    /* Pantalla de registro */
+
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        width: 200px;
+        height: 20px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #3c8320;
+        border-radius: 20px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    /* Modal de registro */
+
+    .modalBox{
+        width: 70%;
+        height: 120px;
+        padding: 5%;
+        border-radius: 15px;
+        background-image: linear-gradient(to right bottom, #1b581e, #2a6d20, #3c8320, #519a1c, #68b013);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcomeTitle{
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 26px;
+        margin-top: 10px;
+    }
+
+    .welcomeText{
+        margin:0;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .btnWhite{
+        width: 70px;
+        height: 18px;
+        padding: 2px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 15px;
+        background-color: white;
+        font-size: 10px;
+        color: #3c8320;
+    }
+
+    /* Home */
+
+    .containerHome{
+        border: 1px solid green;
+        width: 100%;
+        height: 736px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerButtons{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btnCircle{
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .logo{
+        margin: 30px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    /* Carrusel populares */
+
+    .marker{
+        margin:10px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .containerCarousel{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .place{
+        width: 130px;
+        height: 180px;
+        padding: 2%;
+        margin-right: 10px;
+        border-radius: 15px;
+        background-color: white;
+        flex: 0 0 auto;
+    }
+
+    .btnPlace{
+        width: 100%;
+        height: 120px;
+        margin: 0;
+        border: none;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: white;
+    }
+
+    .placeName{
+        margin: 10px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .placeScore{
+        margin: 5px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: #FFD300;
+    }
+
+    /* Scroll de todos los locales */
+
+    .containerScroll{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    .placeScroll{
+        width: 100%;
+        height: 180px;
+        margin: 10px 0;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .btnPlaceScroll{
+        width: 100%;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        border-radius: 15px;
+        border: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgPlaceScroll{
+        width: 180px;
+        height: 180px;
+        margin: 0;
+        border-radius: 15px;
+        background-color: #e1e1e1;
+    }
+
+    .placeInfoScroll{
+        margin: 0;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .placeNameScroll{
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .placeScoreScroll{
+        margin: 20px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFD300;
+    }
+
+    /* Menú Lateral */
+
+    .containerLateralMenu{
+        width: 100px;
+        height: 736px;
+        padding: 100px 10px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-image: linear-gradient(to right bottom, #1b581e, #2a6d20, #3c8320, #519a1c, #68b013);
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+    }
+
+    .btnLateralMenu{
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 40px auto;
+        border: 1px solid black;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        color: white;
+
+    }
+
+    .iconLateralMenu{
+        width: 100%;
+        height: 50px;
+        margin: 0 0 5px 0;
+    }
+
+    /* Al presionar un local */
+
+    .containerDetails{
+        border: 1px solid red;
+        width: 100%;
+        height: 736px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnBack{
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background: none;
+        align-self: flex-start;
+        order: -1;
+        position: absolute;
+    }
+
+    .imgDetailsPlace{
+        border: 1px solid black;
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+
+    .detailsPlace{
+        width: 90%;
+        height: 300px;
+        margin: 80% 0 0 0;
+        padding: 20px;
+        position: absolute;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background-color: #F8FFF8;
+    }
+
+    .nameDetailsPlace{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #2B3223;
+    }
+
+    .btnLike{
+        width: 35px;
+        height: 35px;
+        float: right;
+        margin: -60px 2% 0 0;
+        border-radius: 50%;
+        border: none;
+        background-image: linear-gradient(to right top, #ffd300, #ffc500, #ffb700, #ffa900, #ff9b00);
+        color: white;
+    }
+
+    .infoDetailsPlace{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #2B3223;
+    }
+
+    .btnDetailsComments{
+        width: 80%;
+        height: 40px;
+        margin: 30px 10% 0 10%;
+        padding: 5px;
+        border-radius: 20px;
+        background-image: linear-gradient(to right top, #ffd300, #ffc500, #ffb700, #ffa900, #ff9b00);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: white;
+    }
+
+    /* Al presionar Comentarios */
+
+    .containerComments{
+        border: 1px solid red;
+        width: 100%;
+        height: 736px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxComments{
+        width: 80%;
+        height: auto;
+        padding: 5%;
+        margin: 70px 5% 0 5%;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .userName{
+        margin: 10px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    .userText{
+        margin: 10px 0 0 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .containerInputComment{
+        width: 90%;
+        padding: 25px 0 15px 0;
+        bottom: 0;
+        position: fixed;
+    }
+    
+    .textAreaComment{
+        width: 70%;
+    }
+
+    .btnSend{
+        width: 35px;
+        height: 35px;
+        margin: 0 0 0 20px ;
+        border-radius: 50%;
+        border: none;
+        background-image: linear-gradient(to right top, #ffd300, #ffc500, #ffb700, #ffa900, #ff9b00);
+        color: white;
+    }
+
+
+}

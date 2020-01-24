@@ -7,100 +7,113 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="estructura.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="root">
         <!-- Pantalla de inicio -->
-        <div class="">
+        <div class="container">
             <img src="" class="">
-            <button>Regístrate</button>
-            <button>Iniciar Sesión</button>
-            <button><img src="">Acceder con Google</button>
+            <button class="btnGradient">Regístrate</button>
+            <button class="btnGradient">Iniciar Sesión</button>
         </div>
         <!-- Pantalla de registro -->
-        <div class="">
+        <div class="container">
             <img src="" class="">
             <form>
                 <input type="text" placeholder="Nombre">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Contraseña">
-                <button>Enviar</button>
+                <button class="btnGradient">Enviar</button>
             </form>
         </div>
         <!-- Modal de registro -->
-        <div>
-            <h1>Bienvenido</h1>
-            <p>Te enviamos un mail de confirmación para validar tu cuenta</p>
-            <button>Cerrar</button>
+        <div class="container">
+            <div class="modalBox">
+                <h1 class="welcomeTitle">Bienvenido</h1>
+                <p class="welcomeText">Te enviamos un mail de confirmación para validar tu cuenta</p>
+                <button class="btnWhite">Cerrar</button>
+            </div>
         </div>
         <!-- Pantalla de inicio de sesión -->
-        <div class="">
+        <div class="container">
             <img src="" class="">
             <form>
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Contraseña">
-                <button>Iniciar Sesión</button>
+                <button class="btnGradient">Iniciar Sesión</button>
+                <button class="btnGradient"><img src="">Acceder con Google</button>
             </form>
         </div>
         <!-- Home -->
-        <div>
-            <button>Menú</button>
-            <button>Mapa</button>
-            <img src="" alt="logo">
+        <div class="containerHome">
+            <div class="containerButtons">
+                <button class="btnCircle">Menú</button>
+                <button class="btnCircle">Mapa</button>
+            </div>
+            <h1 class="logo">Y qué papitas?</h1>
             <!-- Carrusel de populares -->
-            <h1>Populares</h1>
-            <div>
-                <div>
-                    <button>
-                        <img src="" alt="">
+            <h2 class="marker">Populares</h2>
+            <div class="containerCarousel">
+                <div class="place">
+                    <button class="btnPlace">
+                        <img src="" alt="" class="placeImg">
                     </button>
-                    <h2>Nombre local</h2>
-                    <h3>Calificación</h3>
+                    <h3 class="placeName">Nombre local</h3>
+                    <h4 class="placeScore">Calificación</h4>
                 </div>
             </div>
             <!-- Scroll de todos los locales -->
-            <div>
-                <div>
-                    <button>
-                        <img src="" alt="">
-                        <h2>Nombre local</h2>
+            <div class="containerScroll">
+                <div class="placeScroll">
+                    <button class="btnPlaceScroll">
+                        <img src="" alt="" class="imgPlaceScroll">
+                        <div class="placeInfoScroll">
+                            <h2 class="placeNameScroll">Nombre local</h2>
+                            <h4 class="placeScoreScroll">Calificación</h4>
+                        </div>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Menú lateral -->
-        <div>
-            <button>Volver</button>
-            <button><img src="" alt="perfil"></button>
-            <button><img src="" alt="favoritos"></button>
-            <button><img src="" alt="cerrar sesión"></button>
+        <div class="containerLateralMenu">
+            <button class="btnLateralMenu">Volver</button>
+            <button class="btnLateralMenu"><img src="" alt="perfil" class="iconLateralMenu">Perfil</button>
+            <button class="btnLateralMenu"><img src="" alt="favoritos">Mis Favoritos</button>
+            <button class="btnLateralMenu"><img src="" alt="cerrar sesión">Cerrar Sesión</button>
         </div>
         <!-- Mapa -->
         <div>
             <button>Comuna</button>
         </div>
         <!-- Al presionar un local -->
-        <div>
-            <img src="" alt="local">
-            <h2>Nombre del local</h2>
-            <button>Like</button>
-            <p>Horarios de atención</p>
-            <p>Ubicación</p>
-            <p>Métodos de pago</p>
-            <button>Comentarios</button>
+        <div class="containerDetails">
+            <button class="btnBack">Volver</button>
+            <img src="" alt="local" class="imgDetailsPlace">
+            <div class="detailsPlace">
+                <h2 class="nameDetailsPlace">Nombre del local</h2>
+                <button class="btnLike">Like</button>
+                <p class="infoDetailsPlace">Horarios de atención</p>
+                <p class="infoDetailsPlace">Ubicación</p>
+                <p class="infoDetailsPlace">Métodos de pago</p>
+                <button class="btnDetailsComments">Comentarios</button>
+            </div>
         </div>
         <!-- Al presionar Comentarios-->
-        <div>
-            <button>Volver</button>
-            <div>
-                <img src="" alt="icono-perfil">
-                <h3>Nombre usuario</h3>
-                <p>Parrafo</p>
+        <div class="containerComments">
+            <button class="btnBack">Volver</button>
+            <div class="boxComments">
+                <h3 class="userName">Nombre usuario</h3>
+                <p class="userText">Parrafo</p>
             </div>
-            <input type="text" placeholder="Escribe un comentario aquí">
-            <button>Enviar</button>
+            <div class="containerInputComment">
+                <input type="text-area"  placeholder="Escribe un comentario aquí" class="textAreaComment">
+                <button class="btnSend">Enviar</button>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
